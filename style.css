@@ -1,0 +1,151 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light mode - default */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+
+    min-height: 100vh;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header */
+header {
+    width: 100%;
+    padding: 20px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Theme button */
+#themeButton {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: #222;
+    color: white;
+
+    cursor: pointer;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+#themeButton:hover {
+    opacity: 0.8;
+}
+
+/* Main content */
+main {
+    min-height: calc(100vh - 80px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Card */
+.card {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 40px;
+    text-align: center;
+
+    background-color: white;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.card h1 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Learn button */
+.learn-button {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background-color: #007bff;
+    color: white;
+
+    cursor: pointer;
+}
+
+/* =========================
+   DARK MODE
+   ========================= */
+
+body.dark {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark #themeButton {
+    background-color: white;
+    color: #222;
+}
+
+body.dark .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.05);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* Mobile phones */
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    #themeButton {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    .card h1 {
+        font-size: 28px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .card {
+        max-width: 600px;
+    }
+}
