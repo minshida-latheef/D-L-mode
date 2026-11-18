@@ -36,7 +36,7 @@ Dark-Light-Mode/
 └── README.md
 ```
 
-[View Dark / Light Mode](YOUR_LIVE_DEMO_URL)
+[View Website](https://minshida-latheef.github.io/D-L-mode/)
 
 ## 👩‍💻 Developer
 
